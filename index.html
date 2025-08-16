@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Orientation Converter with Audio</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Video Converter</h2>
+      <input type="file" id="videoInput" accept="video/*" /><br />
+      <video id="previewVideo" controls></video><br />
+      <button id="toPortrait">Convert to Portrait</button>
+      <button id="toLandscape">Convert to Landscape</button>
+      <button id="downloadBtn">Download</button>
+    </div>
+
+    <div id="loadingOverlay">
+      <div class="spinner"></div>
+      <div>Converting, please wait...</div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
